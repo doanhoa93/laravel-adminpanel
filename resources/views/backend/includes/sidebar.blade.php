@@ -50,7 +50,7 @@
                 </ul>
             </li>
             @endauth
-            @permission('view-page')
+            {{--@permission('view-page')
             <li class="{{ active_class(Active::checkUriPattern('admin/pages*')) }}">
                 <a href="{{ route('admin.pages.index') }}">
                     <i class="fa fa-file-text"></i>
@@ -79,7 +79,7 @@
                     <i class="fa fa-gear"></i>
                     <span>{{ trans('generator::menus.modules.management') }}</span>
                 </a>
-            </li>
+            </li>--}}
             @permission('view-blog')
             <li class="{{ active_class(Active::checkUriPattern('admin/blog*')) }} treeview">
                 <a href="#">
